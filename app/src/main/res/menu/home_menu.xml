@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homw_black_icon"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@drawable/sections_black_icon"
+            android:title="NEW BUDGET"/>
+        <item
+            android:id="@+id/nav_all_caties"
+            android:icon="@drawable/sections_black_icon"
+            android:title="TRANSACTIONS"/>
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search_black_icon"
+            android:title="SEARCH" />
+
+    </group>
+
+
+    <item android:title="SPEND BUZZ">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:icon="@drawable/about_us_black_icon"
+                    android:title="ABOUT US" />
+                <item
+                    android:id="@+id/nav_contacts"
+                    android:icon="@drawable/contact_us_black_icon"
+                    android:title="COMPLAINTS" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/help_black_icon"
+                    android:title="SETTINGS" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/rate_app_black_icon"
+                    android:title="RATE OUR APP" />
+            </group>
+        </menu>
+    </item>
+</menu>

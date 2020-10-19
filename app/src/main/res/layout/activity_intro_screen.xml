@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actitvities.IntroScreen"
+    android:orientation="vertical"
+    android:id="@+id/intro_layout"
+    android:background="@drawable/plan_budget"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="@color/background_tint"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/intro_imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_storage_24"
+        android:layout_marginTop="35dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="30dp"
+        android:id="@+id/new_view"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+    <ImageView
+        android:background="@drawable/intro_image_button_background"
+        android:id="@+id/Intro_imageView_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro_next_image"
+        android:padding="3dp"
+        android:contentDescription="TODO" />
+    <Button
+        android:visibility="gone"
+        android:background="@drawable/intro_button_gradient"
+        android:id="@+id/intro_StartButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="GET STARTED"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:tabBackground="@drawable/intro_indicator_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP>>"
+        android:background="#00000000"
+        android:textColor="@color/white"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

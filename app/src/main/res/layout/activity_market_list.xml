@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Actitvities.MarketList">
+    <Button
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"/>
+
+    <Button
+        android:id="@+id/edit_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Table"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/product_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="S/N"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Item Name"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/product_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Quantity"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Price (NGN)"
+                android:textAlignment="center"
+                android:textColor="#000" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:id="@+id/total_price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: "/>
+        <TextView
+            android:id="@+id/total"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0NGN"
+            />
+    </RelativeLayout>
+</LinearLayout>

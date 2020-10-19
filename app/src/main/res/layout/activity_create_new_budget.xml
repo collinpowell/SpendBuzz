@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actitvities.CreateNewBudget">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/create_new_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/intro_button_gradient"
+            android:text="Create Budget"
+            android:textColor="@color/background_tint"
+            android:layout_margin="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/add_income_layout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:id="@+id/view_all"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                android:layout_centerVertical="true"
+                android:text="Add Income" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/add_expenses_layout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:id="@+id/view_all1"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img1"
+                android:layout_centerVertical="true"
+                android:text="Add Expenses" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

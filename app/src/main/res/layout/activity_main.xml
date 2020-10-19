@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_header_gradient"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#22FFFFFF"
+    tools:context=".Actitvities.MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#DDDBD6" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu_black" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/introslide1" />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="#ECE5C7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan your finance\nLets get Started!!" />
+
+        <Button
+            android:id="@+id/create_new_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intro_button_gradient"
+            android:baselineAligned="false"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Create A New Budget"
+            android:textColor="@color/background_tint"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
